@@ -1,7 +1,7 @@
 import discord
 import asyncio
-import openpyxl
 import random
+import os
 
 client = discord.Client()
 
@@ -70,8 +70,8 @@ async def on_message(message):
 
 
 
-
-client.run("Njk1NTk2Mzk3ODYwNDg3MjA4.Xosopw.25b13uERjyf7-e88pDxqthfhtsY")
+access_token = os.environ["BOT_TOKEN]
+client.run("access_token")
 
 #출처: https://webolutions.tistory.com/132 [Do IT Yourself]
 #[출처] 컴맹도 할수있는 디스코드 봇 만들기(영상첨부)|작성자 섹시베이비
